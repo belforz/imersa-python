@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
+import sys
 
 def encontrar_z(frase):
-  encontrar_z = False
+    encontrou_z = False
+    for caractere in frase:
+        if caractere.lower() == 'z':
+            encontrou_z = True
+            print("z")
+    
+    if not encontrou_z:
+        print("Não encontrou z")
 
-  for caractere in frase:
-    if caractere.lower() == 'z':
-      encontrar_z = True
-      print(caractere)
-      
-    
-    if not encontrar_z:
-      print("Não encontrou z")
-frase_input = input("Digite a frase que contenha Z para a exibição de z's: ")
-encontrar_z(frase_input)
-    
+if len(sys.argv) != 2:
+    print("Número de parâmetros inválido")
+else:
+    encontrar_z(sys.argv[1])
 

@@ -11,10 +11,11 @@ print("O seu resultado é: ", multi)
 
 if multi < 0:
     print("Esse resultado é negativo")
+    print(f"{input1} x {input2} = {multi}" )
 elif multi > 0:
     print("Esse resultado é positivo")
-elif multi == 0:
-    print("Esse resultado é negativo e positivo")
+    print(f"{input1} x {input2} = {multi}" )
 else:
-    print("Sei lá")
+    print(f"{input1} x {input2} = {multi}" )
+
 

@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
 
-number1 = int(input("Digite o primeiro numero: "))
-number2 = int(input("Digite o segundo numero: "))
+number1 = input("Digite o primeiro número: ")
+number2 = input("Digite o segundo número: ")
 
-multi = number1 * number2
-div = number1 / number2
-sum = number1 + number2
-minus = number1 - number2
+multi = int(number1) * int(number2)
+div = int(number1) / int(number2)
+soma = int(number1) + int(number2)
+minus = int(number1) - int(number2)
 
-print(f"O resultado dessa aplicação em soma {sum}")
-print(f"O resultado dessa aplicação em multiplicação {multi}")
-print(f"O resultado dessa aplicação em subtração {minus}")
+print(f"O resultado dessa aplicação em soma: {soma}")
+print(f"O resultado dessa aplicação em multiplicação: {multi}")
+print(f"O resultado dessa aplicação em subtração: {minus}")
 print("O resultado dessa aplicação em divisão: {:.2f}".format(div))
-
 

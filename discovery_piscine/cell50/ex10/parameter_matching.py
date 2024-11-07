@@ -1,22 +1,17 @@
 #!/usr/bin/env python3
+import sys
+
+if len(sys.argv) != 2:
+    print("None")
+    quit()
+
+parameter = sys.argv[1]
 
 
+user_input = input("Por favor digite a palavra: ")
 
-def parameter_matching(parameter, valid_values=[0,1]):
-    try:
-        parameter = int(parameter)
-    except ValueError:
-        print("Por favor, digite um número inteiro.")
-        return
+if user_input == parameter:
+    print("Bom trabalho!")
+else:
+    print("Não, desculpe...")
 
-    
-    if parameter == 0:
-        print("Bom trabalho!")
-    elif parameter == 1:
-        print("Não é isso, desculpe!")
-    else:
-        print("Nada")
-
-parameter_entry = int(input("Digite um argumento de 0 ou 1: "))
-
-parameter_matching(parameter_entry,valid_values=[0,1])

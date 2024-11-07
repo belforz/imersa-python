@@ -11,14 +11,25 @@
 #     i += 1
 
 # tabuada_completa_while()
-numero = 1
-while numero <=10:
-    i = 1 
-    print(f"Tabuado do {numero}: ")
-    while i <=10:
-        resultado = numero * i
-        print(f"{numero} x {i} = {resultado} ")
-        i +=1
+# numero = 1
+# while numero <=10:
+#     i = 1 import sys
 
-    print()
-    numero +=1
+
+#     print(f"Tabuado do {numero}: ")
+#     while i <=10:
+#         resultado = numero * i
+#         print(f"{numero} x {i} = {resultado} ")
+#         i +=1
+
+#     print()
+#     numero +=1
+
+
+numero = 0
+while numero <= 10:
+    linha = f"Tabela de {numero}: " + " ".join(str(numero * i) for i in range(11))
+    print(linha)
+    numero += 1
+
+
